@@ -14,7 +14,7 @@
     :root {
       --black: #111;
       --white: #FAFAF8;
-      --gray: #888;
+      --gray: #444;
       --light: #E8E4DF;
       --accent: #9B7B4C;
     }
@@ -25,7 +25,7 @@
       background: var(--white);
       color: var(--black);
       font-family: 'Noto Sans JP', sans-serif;
-      font-weight: 300;
+      font-weight: 400;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -85,7 +85,7 @@
     .hero-left .bg-img {
       position: absolute;
       inset: 0;
-      background: url('assets/hero-model.jpg') center 80% / cover no-repeat;
+      background: url('assets/hero-fv-model.jpg') center 70% / cover no-repeat;
       opacity: 1;
     }
     .hero-left .bg-img::after {
@@ -114,7 +114,7 @@
       writing-mode: vertical-rl;
       font-size: 10px;
       letter-spacing: 0.3em;
-      color: #555;
+      color: #333;
       z-index: 2;
     }
     .hero-left .accent-line {
@@ -511,7 +511,7 @@
       font-size: 13px;
       line-height: 2.2;
       letter-spacing: 0.05em;
-      color: #555;
+      color: #333;
     }
     .reviews-grid {
       display: grid;
@@ -566,7 +566,7 @@
     .final-cta-left .cta-sub {
       font-size: 10px;
       letter-spacing: 0.3em;
-      color: #555;
+      color: #333;
       margin-top: 40px;
     }
     .final-cta-right {
@@ -588,7 +588,7 @@
     .final-cta-right .cta-body {
       font-size: 13px;
       line-height: 2.4;
-      color: #555;
+      color: #333;
       letter-spacing: 0.05em;
       margin-bottom: 40px;
     }
@@ -696,6 +696,7 @@
       /* Hero */
       .hero { grid-template-columns: 1fr 1fr; min-height: 100vh; }
       .hero-left { padding: 48px; min-height: unset; }
+      .hero-left .bg-img { background-position: center 20%; }
       .hero-left .vertical-title {
         writing-mode: vertical-rl;
         font-size: clamp(48px, 6vw, 80px);
@@ -824,7 +825,7 @@
   <section class="story appear">
     <div class="story-nav">
       <p class="chapter">01 — TECHNOLOGY</p>
-      <h2>見えない<br>シールドを、<br>身に纏う。</h2>
+      <h2>見えない<br>ヴェールを、<br>身に纏う。</h2>
       <ul class="feature-list">
         <li>日米特許取得済み EMCシート</li>
         <li>効果は恒久的 — 期限なし</li>
@@ -877,7 +878,7 @@
     <div class="product-grid">
       <div class="product-card" style="outline:2px solid var(--accent);outline-offset:-2px;position:relative">
         <span style="position:absolute;top:12px;left:12px;z-index:2;background:var(--accent);color:#fff;font-size:8px;letter-spacing:.25em;padding:3px 10px">BEST SELLER</span>
-        <div class="img" style="background:#DDD8D0"><img src="assets/product-luna-single.png" alt="Luna Single" style="width:100%;height:100%;object-fit:contain;display:block"></div>
+        <div class="img" style="background:#1a1a1a"><img src="assets/wear-luna-single.png" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block"></div>
         <p class="p-name">Luna Single</p>
         <p class="p-cat">NECKLACE — EMCシート内蔵</p>
         <p class="p-price">¥19,800（税込）</p>
@@ -886,7 +887,7 @@
       <div class="product-card">
         <div class="img" style="background:#EAE4DC"><img src="assets/product-amilla-linea.png" alt="Amilla Linea" style="width:100%;height:100%;object-fit:contain;display:block"></div>
         <p class="p-name">Amilla Linea</p>
-        <p class="p-cat">NECKLACE — EMCシート内蔵</p>
+        <p class="p-cat">BRACELET — EMCシート内蔵</p>
         <p class="p-price">¥19,800（税込）</p>
         <a href="https://sevenplus.jp/products/amilla-linea" class="p-buy">SHOP →</a>
       </div>
