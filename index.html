@@ -131,7 +131,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;600&family=Noto+Sans+JP:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;600&family=Noto+Sans+JP:wght@200;300;400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;600&family=Noto+Sans+JP:wght@200;300;400&display=swap" rel="stylesheet"></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -1033,9 +1034,9 @@
       <a href="https://sevenplus.jp/en/products/luna-single" class="see-all">全コレクションを見る →</a>
     </div>
     <div class="product-grid">
-      <div class="product-card" style="grid-column:1/-1;outline:2px solid var(--accent);outline-offset:-2px;position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0">
+      <div class="product-card" style="grid-column:1/-1;padding:0;outline:2px solid var(--accent);outline-offset:-2px;position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0">
         <span style="position:absolute;top:12px;left:12px;z-index:2;background:var(--accent);color:#fff;font-size:8px;letter-spacing:.25em;padding:3px 10px">BEST SELLER</span>
-        <div class="img" style="background:#1a1a1a;aspect-ratio:4/3"><img src="assets/wear-luna-single.png" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
+        <div class="img" style="background:#1a1a1a;aspect-ratio:4/3"><img src="assets/wear-luna-single.webp" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
         <div style="padding:28px 20px;display:flex;flex-direction:column;justify-content:center;gap:12px">
           <p class="p-name" style="font-size:18px">Luna Single</p>
           <p class="p-price">¥19,800（税込）</p>
@@ -1047,19 +1048,19 @@
         </div>
       </div>
       <div class="product-card">
-        <div class="img" style="background:#1a1a1a;aspect-ratio:1/1"><img src="assets/wear-amilla-linea.png" alt="Amilla Linea 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
+        <div class="img" style="background:#1a1a1a;aspect-ratio:1/1"><img src="assets/wear-amilla-linea.webp" alt="Amilla Linea 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
         <p class="p-name">Amilla Linea</p>
         <p class="p-price">¥19,800（税込）</p>
         <a href="https://sevenplus.jp/en/collections/bracelet/products/amilla-linea" class="p-buy">SHOP →</a>
       </div>
       <div class="product-card">
-        <div class="img" style="background:#1a1a1a"><img src="assets/wear-amilla-moles.png" alt="Amilla Moles 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
+        <div class="img" style="background:#1a1a1a"><img src="assets/wear-amilla-moles.webp" alt="Amilla Moles 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
         <p class="p-name" style="letter-spacing:.12em">Amilla Moles</p>
         <p class="p-price">¥21,600（税込）</p>
         <a href="https://sevenplus.jp/" class="p-buy">SHOP →</a>
       </div>
       <div class="product-card">
-        <div class="img" style="background:#1a1a1a"><img src="assets/wear-blue-black.png" alt="Blue Black 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
+        <div class="img" style="background:#1a1a1a"><img src="assets/wear-blue-black.webp" alt="Blue Black 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
         <p class="p-name">Sol Stella</p>
         <p class="p-cat">LIMITED STONE — 限定品</p>
         <p class="p-price">¥44,000（税込）</p>
@@ -1080,7 +1081,7 @@
   <section class="appear style-guide-grid">
     <div class="sg-item">
       <div style="aspect-ratio:3/4;background:#E8E4DF;margin-bottom:20px;overflow:hidden;position:relative">
-        <img src="assets/style-daily.png" alt="デイリーコーデ着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        <img src="assets/style-daily.webp" alt="デイリーコーデ着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
         <span style="position:absolute;bottom:12px;left:12px;font-size:9px;letter-spacing:.2em;color:#999">DAILY WEAR</span>
       </div>
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 01 — DAILY</p>
@@ -1090,7 +1091,7 @@
     </div>
     <div class="sg-item" style="background:#FAF9F7">
       <div style="aspect-ratio:3/4;background:#DDD9D3;margin-bottom:20px;overflow:hidden;position:relative">
-        <img src="assets/style-formal.png" alt="フォーマルコーデ着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        <img src="assets/style-formal.webp" alt="フォーマルコーデ着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
         <span style="position:absolute;bottom:12px;left:12px;font-size:9px;letter-spacing:.2em;color:#999">FORMAL WEAR</span>
       </div>
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 02 — FORMAL</p>
@@ -1100,7 +1101,7 @@
     </div>
     <div class="sg-item">
       <div style="aspect-ratio:3/4;background:#D0CCC5;margin-bottom:20px;overflow:hidden;position:relative">
-        <img src="assets/style-gift.png" alt="ギフトイメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        <img src="assets/style-gift.webp" alt="ギフトイメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
         <span style="position:absolute;bottom:12px;left:12px;font-size:9px;letter-spacing:.2em;color:#999">GIFT</span>
       </div>
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 03 — GIFT</p>
