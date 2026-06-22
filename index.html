@@ -111,7 +111,7 @@
             "position": 4,
             "item": {
               "@type": "Product",
-              "name": "#06 Blue Black",
+              "name": "Sol Stella",
               "description": "ターコイズ×ブラックストーン使用の限定ペンダント。天然石固有の模様が一点もの。",
               "brand": {"@type": "Brand", "name": "SEVENPLUS"},
               "category": "ペンダント / 限定品",
@@ -930,7 +930,7 @@
   <nav>
     <span class="issue">VOL.01 — 2026</span>
     <a href="https://sevenplus.jp" class="logo"><img src="assets/sevenplus-logo.png" alt="SEVENPLUS"></a>
-    <a href="https://sevenplus.jp/collections/all" class="shop-link">SHOP</a>
+    <a href="https://sevenplus.jp/" class="shop-link">SHOP</a>
   </nav>
 
   <!-- Hero: 見開き -->
@@ -940,7 +940,7 @@
       <div class="vertical-title appear">纏う、<br>守る。</div>
       <div class="issue-label">EMC JEWELRY</div>
       <div class="accent-line"></div>
-      <a href="https://sevenplus.jp/collections/all" class="cta-left">今すぐ購入 →</a>
+      <a href="https://sevenplus.jp/" class="cta-left">今すぐ購入 →</a>
     </div>
     <div class="hero-right appear">
       <p class="tagline">
@@ -950,7 +950,7 @@
         纏うように、毎日の守りを。
       </p>
       <div class="necklace-img">
-        <img src="assets/luna-single.jpg" alt="Luna Single — SEVENPLUS">
+        <img src="assets/luna-single.jpg" alt="Luna Single — SEVENPLUS" fetchpriority="high" decoding="async">
       </div>
       <div class="product-block">
         <p style="font-size:9px;letter-spacing:.3em;color:var(--accent);margin-bottom:6px">— BEST SELLER</p>
@@ -975,7 +975,7 @@
   <div class="section-rule">
     <span>THE TECHNOLOGY</span>
     <hr>
-    <span>日米特許 / EMC SHIELD</span>
+    <span>EMC TECHNOLOGY</span>
   </div>
 
   <!-- Story -->
@@ -991,12 +991,12 @@
     </div>
     <div class="story-body">
       <div class="product-img" style="background:#111;overflow:hidden;">
-        <img src="assets/luna-single.jpg" alt="Luna Single 4カラー展開" style="width:100%;height:100%;object-fit:contain;display:block;">
+        <img src="assets/luna-single.jpg" alt="Luna Single 4カラー展開" style="width:100%;height:100%;object-fit:contain;display:block;" loading="lazy" decoding="async">
         <span class="caption">Luna Single — Silver / Gold / Pink Gold / Black</span>
       </div>
       <div class="copy">
         <p>
-          ペンダント内部に封入された特殊EMCシートが、スマートフォン・PC・Wi-Fiが発する電磁波を受け取り、人体に有益な波動へと変換します。
+          ペンダント内部に内蔵された特殊EMCシートが、有害とされる電磁波を人体に有益な波動へと変換します。
         </p>
         <p>
           ファッションとして毎日を共にするジュエリーとして設計。着けていることを忘れるほど軽く、気づけばいつも守られている。
@@ -1030,37 +1030,40 @@
   <section class="collection appear">
     <div class="collection-header">
       <h2>ピックアップ</h2>
-      <a href="https://sevenplus.jp/collections/all" class="see-all">全コレクションを見る →</a>
+      <a href="https://sevenplus.jp/en/products/luna-single" class="see-all">全コレクションを見る →</a>
     </div>
     <div class="product-grid">
-      <div class="product-card" style="outline:2px solid var(--accent);outline-offset:-2px;position:relative">
+      <div class="product-card" style="grid-column:1/-1;outline:2px solid var(--accent);outline-offset:-2px;position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0">
         <span style="position:absolute;top:12px;left:12px;z-index:2;background:var(--accent);color:#fff;font-size:8px;letter-spacing:.25em;padding:3px 10px">BEST SELLER</span>
-        <div class="img" style="background:#1a1a1a"><img src="assets/wear-luna-single.png" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <p class="p-name">Luna Single</p>
-        <p class="p-cat">NECKLACE — EMCシート内蔵</p>
-        <p class="p-price">¥19,800（税込）</p>
-        <a href="https://sevenplus.jp/en/collections/featured-collection/products/luna-single" class="p-buy">SHOP →</a>
+        <div class="img" style="background:#1a1a1a;aspect-ratio:4/3"><img src="assets/wear-luna-single.png" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
+        <div style="padding:28px 20px;display:flex;flex-direction:column;justify-content:center;gap:12px">
+          <p class="p-name" style="font-size:18px">Luna Single</p>
+          <p class="p-price">¥19,800（税込）</p>
+          <a href="https://sevenplus.jp/en/collections/featured-collection/products/luna-single" class="p-buy" style="align-self:flex-start">SHOP →</a>
+          <div style="display:flex;gap:16px;margin-top:8px;border-top:1px solid var(--light);padding-top:16px">
+            <a href="https://sevenplus.jp/en/collections/bracelet/products/amilla-linea" style="font-size:9px;letter-spacing:.18em;color:var(--gray);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px">Amilla Linea →</a>
+            <a href="https://sevenplus.jp/en/collections/necklace/products/sol-stella" style="font-size:9px;letter-spacing:.18em;color:var(--gray);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px">Sol Stella →</a>
+          </div>
+        </div>
       </div>
       <div class="product-card">
-        <div class="img" style="background:#1a1a1a"><img src="assets/wear-amilla-linea.png" alt="Amilla Linea 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+        <div class="img" style="background:#1a1a1a;aspect-ratio:1/1"><img src="assets/wear-amilla-linea.png" alt="Amilla Linea 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
         <p class="p-name">Amilla Linea</p>
-        <p class="p-cat">BRACELET — EMCシート内蔵</p>
         <p class="p-price">¥19,800（税込）</p>
-        <a href="https://sevenplus.jp/products/amilla-linea" class="p-buy">SHOP →</a>
+        <a href="https://sevenplus.jp/en/collections/bracelet/products/amilla-linea" class="p-buy">SHOP →</a>
       </div>
       <div class="product-card">
-        <div class="img" style="background:#1a1a1a"><img src="assets/wear-amilla-moles.png" alt="Amilla Moles 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <p class="p-name">Amilla Moles</p>
-        <p class="p-cat">BRACELET — EMCシート内蔵</p>
+        <div class="img" style="background:#1a1a1a"><img src="assets/wear-amilla-moles.png" alt="Amilla Moles 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
+        <p class="p-name" style="letter-spacing:.12em">Amilla Moles</p>
         <p class="p-price">¥21,600（税込）</p>
-        <a href="https://sevenplus.jp/products/amilla-moles" class="p-buy">SHOP →</a>
+        <a href="https://sevenplus.jp/" class="p-buy">SHOP →</a>
       </div>
       <div class="product-card">
-        <div class="img" style="background:#1a1a1a"><img src="assets/wear-blue-black.png" alt="Blue Black 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block"></div>
-        <p class="p-name">#06 Blue Black</p>
+        <div class="img" style="background:#1a1a1a"><img src="assets/wear-blue-black.png" alt="Blue Black 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
+        <p class="p-name">Sol Stella</p>
         <p class="p-cat">LIMITED STONE — 限定品</p>
         <p class="p-price">¥44,000（税込）</p>
-        <a href="https://sevenplus.jp/en/products/01-blue-copper-turquoise" class="p-buy">SHOP →</a>
+        <a href="https://sevenplus.jp/en/collections/necklace/products/sol-stella" class="p-buy">SHOP →</a>
       </div>
     </div>
     <p style="font-size:11px;letter-spacing:.15em;color:var(--gray);text-align:center;margin-top:24px">送料無料</p>
@@ -1077,17 +1080,17 @@
   <section class="appear style-guide-grid">
     <div class="sg-item">
       <div style="aspect-ratio:3/4;background:#E8E4DF;margin-bottom:20px;overflow:hidden;position:relative">
-        <img src="assets/style-daily.png" alt="デイリーコーデ着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.style.display='none'">
+        <img src="assets/style-daily.png" alt="デイリーコーデ着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
         <span style="position:absolute;bottom:12px;left:12px;font-size:9px;letter-spacing:.2em;color:#999">DAILY WEAR</span>
       </div>
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 01 — DAILY</p>
       <h3 style="font-family:'Noto Serif JP',serif;font-size:24px;font-weight:300;letter-spacing:-.01em;line-height:1.5;margin-bottom:16px">シンプルに、<br>毎日の首元へ。</h3>
-      <p style="font-size:12px;line-height:2.2;color:#555;letter-spacing:.05em">Tシャツ・デニム・ワンピース。ベーシックなコーディネートに重ねるだけで、上品さとさりげない守りが生まれる。シルバーの細いチェーンは主張せず、なじむ。</p>
-      <p style="font-size:10px;letter-spacing:.2em;color:var(--accent);margin-top:20px">Amilla Linea — ¥19,800</p>
+      <p style="font-size:12px;line-height:2.2;color:#555;letter-spacing:.05em">Tシャツ・デニム・ワンピース。ベーシックなコーディネートに重ねるだけで、上品さとさりげない守りが生まれる。</p>
+      <p style="font-size:10px;letter-spacing:.2em;color:var(--accent);margin-top:20px">Luna Single — ¥19,800</p>
     </div>
     <div class="sg-item" style="background:#FAF9F7">
       <div style="aspect-ratio:3/4;background:#DDD9D3;margin-bottom:20px;overflow:hidden;position:relative">
-        <img src="assets/style-formal.png" alt="フォーマルコーデ着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.style.display='none'">
+        <img src="assets/style-formal.png" alt="フォーマルコーデ着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
         <span style="position:absolute;bottom:12px;left:12px;font-size:9px;letter-spacing:.2em;color:#999">FORMAL WEAR</span>
       </div>
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 02 — FORMAL</p>
@@ -1097,13 +1100,13 @@
     </div>
     <div class="sg-item">
       <div style="aspect-ratio:3/4;background:#D0CCC5;margin-bottom:20px;overflow:hidden;position:relative">
-        <img src="assets/style-gift.png" alt="ギフトイメージ" style="width:100%;height:100%;object-fit:cover;display:block" onerror="this.style.display='none'">
+        <img src="assets/style-gift.png" alt="ギフトイメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
         <span style="position:absolute;bottom:12px;left:12px;font-size:9px;letter-spacing:.2em;color:#999">GIFT</span>
       </div>
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 03 — GIFT</p>
       <h3 style="font-family:'Noto Serif JP',serif;font-size:24px;font-weight:300;letter-spacing:-.01em;line-height:1.5;margin-bottom:16px">大切な人へ、<br>意味のある贈り物。</h3>
       <p style="font-size:12px;line-height:2.2;color:#555;letter-spacing:.05em">見た目は普通のジュエリーでも、内側には特許技術。誕生日・記念日・就職祝い——「おしゃれで守れる」という発想が、もらった人の記憶に残る贈り物になる。</p>
-      <p style="font-size:10px;letter-spacing:.2em;color:var(--accent);margin-top:20px">#06 Blue Black — ¥44,000</p>
+      <p style="font-size:10px;letter-spacing:.2em;color:var(--accent);margin-top:20px">Sol Stella — ¥44,000</p>
     </div>
   </section>
 
@@ -1151,7 +1154,7 @@
         <p style="font-size:10px;letter-spacing:.3em;color:#555;margin-bottom:32px">SEVENPLUS — 2026</p>
         <div class="vertical-copy">毎日の<br>守りを。</div>
       </div>
-      <p class="cta-sub">日米特許 EMC TECHNOLOGY</p>
+      <p class="cta-sub">愛するあなたのお守りに</p>
     </div>
     <div class="final-cta-right appear">
       <div>
@@ -1160,7 +1163,7 @@
           ファッションとして纏うように、<br>
           日米特許取得のEMCシールドを身に着ける。
         </p>
-        <a href="https://sevenplus.jp/collections/all" class="cta-btn">COLLECTION を見る</a>
+        <a href="https://sevenplus.jp/en/products/luna-single" class="cta-btn">COLLECTION を見る</a>
       </div>
       <p class="guarantee">送料無料 &nbsp;|&nbsp; 日米特許取得</p>
     </div>
@@ -1170,7 +1173,7 @@
   <footer>
     <a href="https://sevenplus.jp" style="font-family:'Noto Serif JP',serif;font-size:13px;letter-spacing:0.25em;text-decoration:none;color:var(--black)">SEVENPLUS</a>
     <span class="copy">© 2026 SEVENPLUS. All rights reserved.</span>
-    <a href="https://sevenplus.jp/collections/all">SHOP →</a>
+    <a href="https://sevenplus.jp/">SHOP →</a>
   </footer>
 
   <!-- Sticky CTA -->
@@ -1179,7 +1182,7 @@
       <span class="s-name">Amilla Collection</span>
       <span class="s-price">¥19,800</span>
     </div>
-    <a href="https://sevenplus.jp/collections/all" class="s-btn">今すぐ購入 →</a>
+    <a href="https://sevenplus.jp/" class="s-btn">今すぐ購入 →</a>
   </div>
 
   <!-- Lightbox overlay -->
