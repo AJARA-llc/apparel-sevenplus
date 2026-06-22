@@ -317,6 +317,7 @@
       overflow: hidden;
       background: #111;
       margin-top: 28px;
+      position: relative;
     }
     .hero-right .necklace-img img {
       width: 100%;
@@ -324,6 +325,43 @@
       object-fit: cover;
       object-position: center center;
       display: block;
+    }
+    .hero-right .necklace-img::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.62) 100%);
+    }
+    .necklace-catch {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    .necklace-catch p {
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 300;
+      font-size: clamp(22px, 5vw, 38px);
+      letter-spacing: 0.18em;
+      color: var(--white);
+      text-align: center;
+      line-height: 1.6;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.5);
+    }
+    .necklace-img .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 14px;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      color: #fff;
+      background: linear-gradient(transparent, rgba(0,0,0,0.65));
+      z-index: 2;
     }
     .hero-right .stats {
       display: flex;
@@ -879,7 +917,7 @@
       /* Collection */
       .collection { padding: 80px 40px; }
       .collection-header { flex-direction: row; align-items: baseline; gap: 0; margin-bottom: 48px; }
-      .product-grid { grid-template-columns: repeat(3, 1fr); }
+      .product-grid { grid-template-columns: repeat(2, 1fr); }
       .product-card { padding: 32px; }
       .product-card .p-name { font-size: 14px; }
       .product-card .p-cat { font-size: 10px; }
@@ -982,6 +1020,10 @@
       </p>
       <div class="necklace-img">
         <img src="assets/luna-single.jpg" alt="Luna Single — SEVENPLUS" fetchpriority="high" decoding="async">
+        <div class="necklace-catch">
+          <p>見えない守りを、<br>身に纏う。</p>
+        </div>
+        <span class="caption">Luna Single — Silver / Gold / Pink Gold / Black</span>
       </div>
       <div class="product-block">
         <p style="font-size:9px;letter-spacing:.3em;color:var(--accent);margin-bottom:6px">— BEST SELLER</p>
@@ -1021,10 +1063,6 @@
       </ul>
     </div>
     <div class="story-body">
-      <div class="product-img" style="background:#111;overflow:hidden;">
-        <img src="assets/luna-single.jpg" alt="Luna Single 4カラー展開" style="width:100%;height:100%;object-fit:contain;display:block;" loading="lazy" decoding="async">
-        <span class="caption">Luna Single — Silver / Gold / Pink Gold / Black</span>
-      </div>
       <div class="copy">
         <p>
           ペンダント内部に内蔵された特殊EMCシートが、有害とされる電磁波を人体に有益な波動へと変換します。
@@ -1035,7 +1073,7 @@
         <div class="tech-spec">
           <div class="spec-item">
             <span class="val">日米</span>
-            <span class="key">特許取得済み</span>
+            <span class="key">特許取得済みの素材を使用</span>
           </div>
           <div class="spec-item">
             <span class="val">∞</span>
@@ -1066,39 +1104,26 @@
     <div class="product-grid">
       <div class="product-card" style="grid-column:1/-1;padding:0;outline:2px solid var(--accent);outline-offset:-2px;position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0">
         <span style="position:absolute;top:12px;left:12px;z-index:2;background:var(--accent);color:#fff;font-size:8px;letter-spacing:.25em;padding:3px 10px">BEST SELLER</span>
-        <div class="img" style="background:#1a1a1a;aspect-ratio:4/3;margin-bottom:0"><img src="assets/wear-luna-single.webp" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
-        <div style="padding:28px 20px;display:flex;flex-direction:column;justify-content:center;gap:12px">
-          <p class="p-name" style="font-size:18px">Luna Single</p>
+        <div style="background:#1a1a1a;overflow:hidden"><img src="assets/wear-luna-single.webp" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block" loading="lazy" decoding="async"></div>
+        <div style="padding:36px 28px;display:flex;flex-direction:column;justify-content:center;gap:16px">
+          <p class="p-name" style="font-size:20px">Luna Single</p>
           <p class="p-price">¥19,800（税込）</p>
-          <a href="https://sevenplus.jp/en/collections/featured-collection/products/luna-single" class="p-buy" style="align-self:flex-start">SHOP →</a>
-          <div style="display:flex;gap:16px;margin-top:8px;border-top:1px solid var(--light);padding-top:16px">
-            <a href="https://sevenplus.jp/en/collections/bracelet/products/amilla-linea" style="font-size:9px;letter-spacing:.18em;color:var(--gray);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px">Amilla Linea →</a>
-            <a href="https://sevenplus.jp/en/collections/necklace/products/sol-stella" style="font-size:9px;letter-spacing:.18em;color:var(--gray);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px">Sol Stella →</a>
-          </div>
+          <a href="https://sevenplus.jp/en/collections/featured-collection/products/luna-single" class="p-buy" style="padding:14px 32px;align-self:flex-start">SHOP →</a>
         </div>
       </div>
       <div class="product-card">
-        <div class="img" style="background:#1a1a1a;aspect-ratio:1/1"><img src="assets/wear-amilla-linea.webp" alt="Amilla Linea 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
-        <p class="p-name">Amilla Linea</p>
-        <p class="p-price">¥19,800（税込）</p>
-        <a href="https://sevenplus.jp/en/collections/bracelet/products/amilla-linea" class="p-buy">SHOP →</a>
+        <div class="img" style="background:#1a1a1a;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center">
+          <span style="font-size:9px;letter-spacing:.3em;color:#555">COMING SOON</span>
+        </div>
+        <p class="p-name" style="color:#bbb">— TBD —</p>
+        <p class="p-price" style="color:#ccc">¥ —,—— （税込）</p>
       </div>
       <div class="product-card">
-        <div class="img" style="background:#1a1a1a"><img src="assets/wear-amilla-moles.webp" alt="Amilla Moles 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
-        <p class="p-name" style="letter-spacing:.12em">Amilla Moles</p>
-        <p class="p-price">¥21,600（税込）</p>
-        <a href="https://sevenplus.jp/" class="p-buy">SHOP →</a>
-      </div>
-      <div class="product-card sol-stella">
-        <div class="sol-img-wrap">
-          <img src="assets/wear-blue-black.webp" alt="Sol Stella 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async">
+        <div class="img" style="background:#1a1a1a;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center">
+          <span style="font-size:9px;letter-spacing:.3em;color:#555">COMING SOON</span>
         </div>
-        <div class="sol-body">
-          <p class="p-cat">LIMITED STONE — 限定品</p>
-          <p class="p-name">Sol Stella</p>
-          <p class="p-price">¥44,000（税込）</p>
-        </div>
-        <a href="https://sevenplus.jp/en/collections/necklace/products/sol-stella" class="p-buy">SHOP →</a>
+        <p class="p-name" style="color:#bbb">— TBD —</p>
+        <p class="p-price" style="color:#ccc">¥ —,—— （税込）</p>
       </div>
     </div>
     <p style="font-size:11px;letter-spacing:.15em;color:var(--gray);text-align:center;margin-top:24px">送料無料</p>
@@ -1121,7 +1146,6 @@
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 01 — DAILY</p>
       <h3 style="font-family:'Noto Serif JP',serif;font-size:24px;font-weight:300;letter-spacing:-.01em;line-height:1.5;margin-bottom:16px">シンプルに、<br>毎日の首元へ。</h3>
       <p style="font-size:12px;line-height:2.2;color:#555;letter-spacing:.05em">Tシャツ・デニム・ワンピース。ベーシックなコーディネートに重ねるだけで、上品さとさりげない守りが生まれる。</p>
-      <p style="font-size:10px;letter-spacing:.2em;color:var(--accent);margin-top:20px">Luna Single — ¥19,800</p>
     </div>
     <div class="sg-item" style="background:#FAF9F7">
       <div style="aspect-ratio:3/4;background:#DDD9D3;margin-bottom:20px;overflow:hidden;position:relative">
@@ -1131,17 +1155,15 @@
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 02 — FORMAL</p>
       <h3 style="font-family:'Noto Serif JP',serif;font-size:24px;font-weight:300;letter-spacing:-.01em;line-height:1.5;margin-bottom:16px">オフィスにも、<br>特別な夜にも。</h3>
       <p style="font-size:12px;line-height:2.2;color:#555;letter-spacing:.05em">スーツ・ドレス・セットアップ。改まった場所でも違和感なく溶け込む、ミニマルなデザイン。見えないところで守られている安心感は、自信につながる。</p>
-      <p style="font-size:10px;letter-spacing:.2em;color:var(--accent);margin-top:20px">Amilla Moles — ¥24,800</p>
     </div>
     <div class="sg-item">
       <div style="aspect-ratio:3/4;background:#D0CCC5;margin-bottom:20px;overflow:hidden;position:relative">
-        <img src="assets/style-gift.webp" alt="ギフトイメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
+        <img src="assets/gift-box.jpg" alt="ギフトボックスイメージ" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block" loading="lazy" decoding="async" onerror="this.style.display='none'">
         <span style="position:absolute;bottom:12px;left:12px;font-size:9px;letter-spacing:.2em;color:#999">GIFT</span>
       </div>
       <p style="font-size:9px;letter-spacing:.35em;color:var(--gray);margin-bottom:16px">SCENE 03 — GIFT</p>
       <h3 style="font-family:'Noto Serif JP',serif;font-size:24px;font-weight:300;letter-spacing:-.01em;line-height:1.5;margin-bottom:16px">大切な人へ、<br>意味のある贈り物。</h3>
       <p style="font-size:12px;line-height:2.2;color:#555;letter-spacing:.05em">見た目は普通のジュエリーでも、内側には特許技術。誕生日・記念日・就職祝い——「おしゃれで守れる」という発想が、もらった人の記憶に残る贈り物になる。</p>
-      <p style="font-size:10px;letter-spacing:.2em;color:var(--accent);margin-top:20px">Sol Stella — ¥44,000</p>
     </div>
   </section>
 
@@ -1187,9 +1209,8 @@
     <div class="final-cta-left appear">
       <div>
         <p style="font-size:10px;letter-spacing:.3em;color:#555;margin-bottom:32px">SEVENPLUS — 2026</p>
-        <div class="vertical-copy">毎日の<br>守りを。</div>
+        <div class="vertical-copy">愛するあなたのお守りに</div>
       </div>
-      <p class="cta-sub">愛するあなたのお守りに</p>
     </div>
     <div class="final-cta-right appear">
       <div>
