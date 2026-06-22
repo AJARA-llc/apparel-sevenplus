@@ -559,6 +559,32 @@
     }
     .product-card .p-buy:hover { background: var(--accent); }
 
+    /* Sol Stella — horizontal strip on mobile (fixes orphan in 2-col grid) */
+    .sol-stella {
+      grid-column: 1/-1;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+    }
+    .sol-stella .sol-img-wrap {
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0;
+      overflow: hidden;
+      background: #1a1a1a;
+    }
+    .sol-stella .sol-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .sol-stella .sol-body { flex: 1; min-width: 0; }
+    .sol-stella .sol-body .p-price,
+    .sol-stella .sol-body .p-name { margin-bottom: 2px; }
+    .sol-stella .p-buy { flex-shrink: 0; padding: 10px 16px; white-space: nowrap; }
+
     /* ── Style guide ── */
     .style-guide-grid {
       display: grid;
@@ -859,6 +885,10 @@
       .product-card .p-cat { font-size: 10px; }
       .product-card .p-price { font-size: 12px; }
       .product-card .img { margin-bottom: 20px; }
+      /* Sol Stella — restore to normal vertical card in 3-col desktop grid */
+      .sol-stella { grid-column: auto; display: block; padding: 32px; }
+      .sol-stella .sol-img-wrap { width: 100%; height: auto; aspect-ratio: 3/4; margin-bottom: 20px; }
+      .sol-stella .p-buy { display: block; padding: 10px 0; white-space: normal; }
 
       /* Style guide */
       .style-guide-grid { grid-template-columns: 1fr 1fr 1fr; }
@@ -1036,7 +1066,7 @@
     <div class="product-grid">
       <div class="product-card" style="grid-column:1/-1;padding:0;outline:2px solid var(--accent);outline-offset:-2px;position:relative;display:grid;grid-template-columns:1fr 1fr;gap:0">
         <span style="position:absolute;top:12px;left:12px;z-index:2;background:var(--accent);color:#fff;font-size:8px;letter-spacing:.25em;padding:3px 10px">BEST SELLER</span>
-        <div class="img" style="background:#1a1a1a;aspect-ratio:4/3"><img src="assets/wear-luna-single.webp" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
+        <div class="img" style="background:#1a1a1a;aspect-ratio:4/3;margin-bottom:0"><img src="assets/wear-luna-single.webp" alt="Luna Single 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
         <div style="padding:28px 20px;display:flex;flex-direction:column;justify-content:center;gap:12px">
           <p class="p-name" style="font-size:18px">Luna Single</p>
           <p class="p-price">¥19,800（税込）</p>
@@ -1059,11 +1089,15 @@
         <p class="p-price">¥21,600（税込）</p>
         <a href="https://sevenplus.jp/" class="p-buy">SHOP →</a>
       </div>
-      <div class="product-card">
-        <div class="img" style="background:#1a1a1a"><img src="assets/wear-blue-black.webp" alt="Blue Black 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async"></div>
-        <p class="p-name">Sol Stella</p>
-        <p class="p-cat">LIMITED STONE — 限定品</p>
-        <p class="p-price">¥44,000（税込）</p>
+      <div class="product-card sol-stella">
+        <div class="sol-img-wrap">
+          <img src="assets/wear-blue-black.webp" alt="Sol Stella 着用イメージ" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" decoding="async">
+        </div>
+        <div class="sol-body">
+          <p class="p-cat">LIMITED STONE — 限定品</p>
+          <p class="p-name">Sol Stella</p>
+          <p class="p-price">¥44,000（税込）</p>
+        </div>
         <a href="https://sevenplus.jp/en/collections/necklace/products/sol-stella" class="p-buy">SHOP →</a>
       </div>
     </div>
